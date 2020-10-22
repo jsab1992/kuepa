@@ -1,0 +1,59 @@
+.navbar {
+  display: flex;
+    height: 100vh;
+    width: 160px;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+}
+.navbar.boxnav {
+  background: #2b2d42;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navitem {
+  padding: 13px 2px;
+  margin: 11px auto;
+  height: 12px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.borderitem {
+  border-left: 12px;
+  border: 2px solid #fe6e24;
+  border-radius: 0 11px 11px 0;
+  height: 28px;
+  left: 0;
+  position: absolute;
+}
+
+.kuepa {
+  /* margin: 43px 0 66px; */
+  margin: 36px 0 40px 24px;
+}
+.navicon img{
+  clip-path: circle(50%);
+  width: 40px;
+  height: 40px;
+  margin-left: 19px;
+}
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-size: 27px;
+}

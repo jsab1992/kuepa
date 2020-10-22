@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica", sans-serif;
+}
+
+.mat-progress-spinner.mat-accent circle,
+.mat-spinner.mat-accent circle {
+  stroke: red;
+}
+
+.box-target {
+  display: flex;
+  align-items: center;
+  height: 179px;
+  background: #fff;
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.box-target.box-target-column {
+  flex-direction: column;
+  padding: 16px;
+  display: flex;
+  margin-left: 0;
+}
+
+.box-target.boxcalendar {
+  height: auto;
+  flex-direction: column;
+}
+
+.mat-progress-bar.mat-accent .mat-progress-bar-fill::after {
+  background: rgb(201, 80, 115);
+  background: linear-gradient(
+    90deg,
+    rgba(201, 80, 115, 1) 0%,
+    rgba(198, 150, 91, 0.9416141456582633) 46%,
+    rgba(217, 156, 115, 0.8379726890756303) 100%
+  );
+  border-radius: 3px;
+}
+
+
